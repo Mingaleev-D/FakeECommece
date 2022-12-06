@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="h4">
-        <item name="android:fontFamily">@font/arial_rounded_mt_regular</item>
+        <item name="android:fontFamily">@font/arlrdbd</item>
         <item name="android:textColor">@color/g_black</item>
         <item name="android:textSize">@dimen/h4TextSize</item>
     </style>
