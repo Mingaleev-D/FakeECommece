@@ -13,5 +13,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="rightAdress">The Right Address\nFor Shopping\nAnyday</string>
     <string name="qulity">It is now very easy to reach the\nbest auality among the\nproducts on the internet!</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
 
 </resources>
