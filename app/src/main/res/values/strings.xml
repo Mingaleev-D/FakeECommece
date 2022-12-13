@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">FakeECommece</string>
+    <string name="title_activity_shopping">ShoppingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rightAdress">The Right Address\nFor Shopping\nAnyday</string>
+    <string name="qulity">It is now very easy to reach the\nbest auality among the\nproducts on the internet!</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="let_s_login">Let\'s Login</string>
+    <string name="let_s_register">Let\'s Register</string>
+
 </resources>
