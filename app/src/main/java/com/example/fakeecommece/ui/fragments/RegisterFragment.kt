@@ -11,9 +11,12 @@ import androidx.lifecycle.lifecycleScope
 import com.example.fakeecommece.R
 import com.example.fakeecommece.data.model.User
 import com.example.fakeecommece.databinding.FragmentRegisterBinding
+import com.example.fakeecommece.ui.util.RegisterValidation
 import com.example.fakeecommece.ui.util.Resource
 import com.example.fakeecommece.ui.viewmodel.RegisterViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 @AndroidEntryPoint
 class RegisterFragment : Fragment() {
@@ -61,6 +64,27 @@ class RegisterFragment : Fragment() {
                else                -> Unit
             }
          }
+      }
+      lifecycleScope.launchWhenStarted {
+         viewModel.validation.collect { validation ->
+            if (validation.email is RegisterValidation.Failed) {
+               withContext(Dispatchers.Main) {
+                  binding.edEmailReg.apply {
+                     requestFocus()
+                     error = validation.email.message
+                  }
+               }
+            }
+            if (validation.password is RegisterValidation.Failed) {
+               withContext(Dispatchers.Main) {
+                  binding.edPasswordReg.apply {
+                     requestFocus()
+                     error = validation.password.message
+                  }
+               }
+            }
+         }
+
       }
    }
 
